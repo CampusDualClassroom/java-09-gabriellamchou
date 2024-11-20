@@ -4,6 +4,8 @@ public class Exercise09 {
 
     public static void main(String[] args) {
 
+        doWhileLoop(10);
+
     }
 
     //TODO ↓
@@ -12,6 +14,13 @@ public class Exercise09 {
     // Entra con valor: X+1, sale con valor: X+2;
     // etc.
     public static void doWhileLoop(int num) {
+
+        int count = 0;
+
+        do {
+            System.out.println("Entra con valor: " + count + ", sale con valor: " + (count + 1));
+            count ++;
+        } while (count < num);
 
     }
 }
